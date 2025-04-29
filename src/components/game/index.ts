@@ -1,0 +1,6 @@
+export { GameTitle } from './game-title'
+export { ArrowLeftIcon } from './icons/arrow-left-icon'
+export { StarIcon } from './icons/star-icon'
+export { UserIcon } from './icons/user-icon'
+export { WatchIcon } from './icons/watch-icon'
+export { GameInfo } from './game-info'
