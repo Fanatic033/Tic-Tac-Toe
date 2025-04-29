@@ -7,7 +7,7 @@ export default function Home() {
 			<Header />
 			<main className={'pt-6 mx-auto max-w-[616px]'}>
 				<GameTitle />
-				<GameInfo />
+				<GameInfo className='' />
 			</main>
 		</div>
 	)

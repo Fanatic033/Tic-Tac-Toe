@@ -1,9 +1,15 @@
 import Image from 'next/image'
 import avatar from '@/public/avatar.svg'
+import { FC } from 'react'
+import clsx from 'clsx'
 
-export const Profile = () => {
+export interface Props {
+	className?: string
+}
+
+export const Profile: FC<Props> = ({ className }) => {
 	return (
-		<div className='flex items-center gap-2 text-start'>
+		<div className={clsx('flex items-center gap-2 text-start', className)}>
 			<Image
 				src={avatar}
 				alt={'avatar'}
