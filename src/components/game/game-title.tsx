@@ -4,7 +4,7 @@ import {
 	StarIcon,
 	UserIcon,
 	WatchIcon
-} from '@/components/game/index'
+} from '@/components/game/icons'
 
 export const GameTitle = () => {
 	return (

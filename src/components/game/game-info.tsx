@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import { FC } from 'react'
 import { Profile } from '@/components/profile'
-import { CrossIcon } from '@/components/game'
+import { CrossIcon } from '@/components/game/icons'
 
 export interface Props {
 	className?: string
@@ -12,7 +12,7 @@ export const GameInfo: FC<Props> = ({ className }) => {
 		<div
 			className={clsx(
 				className,
-				'mt-4 bg-white rounded-2xl shadow-md px-8 py-4 flex items-center justify-between '
+				'bg-white rounded-2xl shadow-md px-8 py-4 flex items-center justify-between'
 			)}
 		>
 			<div className='flex gap-3 items-center '>

@@ -1,0 +1,8 @@
+export { ArrowLeftIcon } from './arrow-left-icon'
+export { StarIcon } from './star-icon'
+export { UserIcon } from './user-icon'
+export { WatchIcon } from './watch-icon'
+export { CrossIcon } from './cross-icon'
+export { ZeroIcon } from './zero-icon'
+export { SquareIcon } from './square-icon'
+export { TriangleIcon } from './triangle-icon'

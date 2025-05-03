@@ -1,6 +1,10 @@
-export const SquareIcon = () => {
+import { FC } from 'react'
+import { ClassName } from '@/types/types'
+
+export const SquareIcon: FC<ClassName> = ({ className }) => {
 	return (
 		<svg
+			className={className}
 			width='12'
 			height='12'
 			viewBox='0 0 12 12'
