@@ -21,7 +21,7 @@ export const Header = () => {
 				Играть
 			</UiButton>
 			<button className='ml-auto flex items-center gap-2 text-teal-600 '>
-				<Profile />
+				<Profile  name={'Fanatic033'} rating={1203} />
 				<ArrowDownIcon />
 			</button>
 		</header>

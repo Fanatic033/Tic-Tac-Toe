@@ -15,8 +15,14 @@ interface MoveProps extends PropsWithChildren {
 	nextMove: GameSymbolType
 }
 
-export const GameField: FC<ClassName> = ({ className }) => {
-	const { cells, currentMove, nextMove, handleCellClick } = useGameState()
+interface GameProps {
+	className?: string
+	playersCount: number
+}
+
+export const GameField: FC<GameProps> = ({ className, playersCount }) => {
+	const { cells, currentMove, nextMove, handleCellClick } =
+		useGameState(playersCount)
 	return (
 		<GameFieldLayout className={className}>
 			<GameMoveInfo

@@ -5,8 +5,13 @@ import {
 	UserIcon,
 	WatchIcon
 } from '@/components/game/icons'
+import { FC } from 'react'
 
-export const GameTitle = () => {
+interface Props{
+	playersCount: number
+}
+
+export const GameTitle: FC<Props> = ({playersCount}) => {
 	return (
 		<div className='pl-2'>
 			<Link
@@ -20,7 +25,7 @@ export const GameTitle = () => {
 			<div className='flex items-center gap-3 text-xs text-slate-400 '>
 				<StarIcon />
 				<div className='flex items-center gap-1'>
-					<UserIcon />2
+					<UserIcon /> {playersCount}
 				</div>
 				<div className='flex items-center gap-1'>
 					<WatchIcon />1 мин на ход
